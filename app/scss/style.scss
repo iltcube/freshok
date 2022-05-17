@@ -1,6 +1,7 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset';
+@import 'libs';
 @import 'global';
 
 .header {
@@ -138,6 +139,70 @@
         color: $special;
         text-align: center;
     }
+}
+
+.top-slider {
+
+    &__content {
+        padding: 140px 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    &__item {
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 4px;
+        color: $subtitle;
+        height: 315px;
+        padding: 24px 0 24px 24px;
+    }
+
+    &__title {
+        max-width: 761px;
+        font-size: 60px;
+        line-height: 1.3;
+        @extend %ruda-900;
+        margin-bottom: 12px;
+        text-transform: uppercase;
+
+        span {
+            color: $special;
+        }
+    }
+
+    &__text {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    &__link {
+        border: none;
+        background-color: $accent;
+        color: #fff;
+        font-size: 18px;
+        line-height: 1.3;
+        padding: 12px 24px;
+        border-radius: 6px;
+    }
+}
+
+.slick-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background-color: transparent;
+    z-index: 5;
+    cursor: pointer;
+}
+
+.slick-prev {
+    left: 60px;
+}
+
+.slick-next {
+    right: 60px;
 }
 
 .footer {
