@@ -12,6 +12,13 @@ body {
     flex-direction: column;
 }
 
+button {
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+}
+
 .main {
     flex-grow: 1;
 }
@@ -37,4 +44,12 @@ body {
         color: $accent;
         border: 1px solid $accent;
     }
+}
+
+.title {
+    @extend %ruda-600;
+    font-size: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
 }
