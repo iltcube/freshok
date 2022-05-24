@@ -21,3 +21,20 @@ body {
     margin: 0 auto;
     padding: 0 15px;
 }
+
+.btn {
+    border: 1px solid transparent;
+    background-color: $accent;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.3;
+    padding: 12px 24px;
+    border-radius: 6px;
+    transition: all .5s;
+
+    &:hover {
+        background-color: transparent;
+        color: $accent;
+        border: 1px solid $accent;
+    }
+}
