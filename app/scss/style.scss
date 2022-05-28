@@ -797,4 +797,59 @@
     }
 }
 
+.modal {
+    padding: 70px 0;
+    max-width: 600px;
+    margin: 0 auto;
+
+    &__links {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    &__link {
+        text-transform: uppercase;
+        color: $subtitle;
+        font-size: 20px;
+        margin: 0 30px;
+
+        &--active {
+            color: $accent;
+        }
+    }
+
+    &__label {
+        display: block;
+        margin-bottom: 40px;
+        @extend %ruda-600;
+    }
+
+    &__input {
+        display: block;
+        width: 100%;
+        border: none;
+        background-color: #f6f6f6;
+        margin-top: 5px;
+        height: 60px;
+        border-radius: 6px;
+        padding: 0 15px;
+    }
+
+    &__btn {
+        display: block;
+        width: 100%;
+        text-transform: uppercase;
+        color: #fff;
+        background-color: #E0EDCF;
+        padding: 14px 0;
+        cursor: pointer;
+    }
+
+    &__error {
+        margin-top: 15px;
+        color: $special;
+        display: inline-block;
+    }
+}
+
 @import 'media';
