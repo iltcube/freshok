@@ -835,6 +835,14 @@
         padding: 0 15px;
     }
 
+    &__text {
+        margin-bottom: 20px;
+
+        & a {
+            text-decoration: underline;
+        }
+    }
+
     &__btn {
         display: block;
         width: 100%;
@@ -843,6 +851,15 @@
         background-color: #E0EDCF;
         padding: 14px 0;
         cursor: pointer;
+        border: 1px solid transparent;
+        transition: all .3s;
+        ;
+
+        &:hover {
+            border: 1px solid #E0EDCF;
+            color: $accent;
+            background-color: #fff;
+        }
     }
 
     &__error {
