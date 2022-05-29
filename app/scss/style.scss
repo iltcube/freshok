@@ -869,4 +869,32 @@
     }
 }
 
+.page-404 {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 120px 0;
+    }
+
+    &__info {
+        max-width: 570px;
+        width: 100%;
+    }
+
+    &__title {
+        @extend %ruda-900;
+        font-size: 38px;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        margin-bottom: 50px;
+    }
+
+    & a {
+        display: inline-block;
+    }
+}
+
 @import 'media';
