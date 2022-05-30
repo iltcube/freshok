@@ -23,3 +23,16 @@ $(function () {
     var mixer1 = mixitup(containerEl1, config);
     var mixer2 = mixitup(containerEl2, config);
 });
+
+$('.filter-price__input').ionRangeSlider({
+    type: "double",
+    prefix: "₽",
+    onStart: function (data) {
+        $('.filter-price__from').text(data.from);
+        $('.filter-price__to').text(data.to);
+    },
+    onChange: function (data) {
+        $('.filter-price__from').text(data.from);
+        $('.filter-price__to').text(data.to);
+    }
+});

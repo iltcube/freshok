@@ -52,13 +52,13 @@
         <div class="header__bottom">
             <div class="container">
                 <div class="header__inner">
-                    <a class="logo" href="#">
+                    <a href="#" class="logo">
                         <img class="logo-img" src="images/logo.svg" alt="logo">
                     </a>
 
                     <ul class="header__catalog">
                         <li class="header__catalog-title">
-                            <a href="shop.html">Каталог продуктов</a>
+                            <a href="#">Каталог продуктов</a>
                             <ul class="header__catalog-list">
                                 <li class="header__catalog-item"><a href="#">Овощи и фрукты</a></li>
                                 <li class="header__catalog-item"><a href="#">Бакалея</a></li>
@@ -101,19 +101,58 @@
 
         <section class="top">
             <div class="container">
-                <h2 class="title">Авторизация</h2>
+                <h2 class="title">Каталог</h2>
                 <div class="breadcrumbs">
                     <ul class="breadcrumbs__list">
                         <li class="breadcrumbs__item">
-                            <a href="index.html" class="breadcrumbs__link">Главная</a>
+                            <a class="breadcrumbs__link" href="index.html">Главная</a>
                         </li>
 
                         <li class="breadcrumbs__item">
-                            <span href="#" class="breadcrumbs__link">Вход</span>
+                            <span href="#" class="breadcrumbs__link">Продукты</span>
                         </li>
                     </ul>
                 </div>
             </div>
+        </section>
+
+        <section class="shop">
+            <div class="container">
+                <div class="shop__inner">
+                    <div class="shop__filters filter">
+
+                        <div class="filter-search filter__item">
+                            <h3 class="filter__title">Поиск</h3>
+                            <form class="filter-search__form" action="#">
+                                <input class="filter-search__input" type="text"
+                                    placeholder="Введите название товара...">
+                                <button class="filter-search__btn" type="submit">
+                                    <img src="images/icon/icon-search__white.svg" alt="search images">
+                                </button>
+                            </form>
+
+                        </div>
+
+                        <div class="filter__item filter-price">
+                            <h3 class="filter__title">Стоимость</h3>
+                            <form class="filter-price__form" action="#">
+                                <input class="filter-price__input" type="text" data-min="0" data-max="1000"
+                                    data-from="200" data-to="500">
+                                <label class="filter-price__label">
+                                    <span>Стоимость:
+                                        ₽<span class="filter-price__from"></span>
+                                        -
+                                        ₽<span class="filter-price__to"></span>
+                                    </span>
+                                    <button class="filter-price__btn btn" type="submit">Применить</button>
+                                </label>
+                            </form>
+                        </div>
+
+                    </div>
+                    <div class="shop__content">
+                    </div>
+                </div>
         </section>
 
 
