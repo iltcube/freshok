@@ -28,3 +28,11 @@ $bg: #f6f6f6;
     font-family: 'Ruda-Black', sans-serif;
     font-weight: 900;
 }
+
+%checkbox-hidden {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    position: absolute;
+}
