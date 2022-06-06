@@ -1,11 +1,12 @@
 $(function () {
 
-    $('.top-slider__inner').slick({
+    $('.top-slider__inner, .blog-page__slider').slick({
         prevArrow: '<button class="slick-btn slick-prev"><img src="images/icon/arrow-left.svg" alt="prev"></button>',
         nextArrow: '<button class="slick-btn slick-next"><img src="images/icon/arrow-right.svg" alt="prev"></button>',
         fade: true,
         autoplay: true,
         autoplaySpeed: 4000,
+        infinite: false,
     });
 
 });
@@ -78,3 +79,8 @@ $('.product-tabs__top-item').on('click', function (e) {
     $($(this).attr('href')).addClass('product-tabs__content-item--active');
 
 });
+
+// $('.blog-page__slider').slick({
+//     prevArrow: '<button class="slick-btn slick-prev"><img src="images/icon/arrow-left.svg" alt="prev"></button>',
+//     nextArrow: '<button class="slick-btn slick-next"><img src="images/icon/arrow-right.svg" alt="prev"></button>',
+// });
