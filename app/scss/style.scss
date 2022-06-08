@@ -1384,6 +1384,13 @@
     display: flex;
     width: 100%;
 
+    &__title {
+        font-size: 22px;
+        @extend %opensans-700;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+    }
+
     &__img {
         min-width: 70px;
         height: 70px;
@@ -1581,6 +1588,7 @@
     border: 1px solid #333;
     padding: 35px 30px 40px;
     margin-bottom: 40px;
+    border-radius: 6px;
 
     &__title {
         text-transform: uppercase;
@@ -1613,6 +1621,203 @@
     &__box-date {
         display: block;
         margin-top: 20px;
+    }
+}
+
+.blog-one {
+
+    &__text {
+        border: 1px solid #333;
+        border-radius: 6px;
+        padding: 30px;
+        margin-bottom: 40px;
+
+        h4 {
+            @extend %opensans-700;
+            font-size: 22px;
+            margin: 25px 0;
+        }
+
+        p {
+            margin: 25px 0;
+        }
+
+        blockquote {
+            background-color: $bg;
+            border-radius: 6px;
+            border-left: 3px solid $accent;
+            font-size: 22px;
+            margin: 25px 0;
+            padding: 35px;
+        }
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px !important;
+        color: $subtitle;
+    }
+
+    &__left,
+    &__right {
+        max-width: 345px;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__left {
+        float: left;
+        margin-right: 30px;
+        margin-bottom: 10px;
+    }
+
+    &__right {
+        float: right;
+        margin-left: 30px;
+        margin-bottom: 10px;
+    }
+
+    .comments__form {
+        border-bottom: none;
+
+        &-text {
+            max-width: 370px
+        }
+    }
+
+    &__author {
+        display: flex;
+        border-bottom: 1px solid $accent;
+        padding-bottom: 20px;
+        margin-bottom: 40px;
+
+        &-img {
+            width: 140px;
+            height: 140px;
+            object-fit: cover;
+            margin-right: 30px;
+        }
+
+        &-name {
+            @extend %ruda-900;
+            margin-bottom: 25px;
+            font-size: 22px;
+        }
+    }
+}
+
+.map {
+    padding: 120px 0;
+}
+
+#map {
+    width: 100%;
+    height: 450px;
+}
+
+.contact {
+    padding-bottom: 120px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__info {
+        max-width: 370px;
+        width: 100%;
+        margin-right: 30px;
+
+        &-title {
+            font-size: 42px;
+            @extend %ruda-900;
+            margin-bottom: 20px;
+        }
+
+        &-text {
+            margin-bottom: 60px;
+        }
+
+        &-item {
+            margin-bottom: 50px;
+            padding-left: 80px;
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: -10px;
+                left: 0;
+                width: 60px;
+                height: 60px;
+                box-shadow: 0 5px 20px 0 rgba(146, 146, 146, 0.3);
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+
+            &:nth-child(1)::before {
+                background-image: url(../images/icon/phone.svg);
+            }
+
+            &:nth-child(2)::before {
+                background-image: url(../images/icon/location.svg);
+            }
+
+            &:nth-child(3)::before {
+                background-image: url(../images/icon/mail.svg);
+            }
+
+            a {
+                display: block;
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+    &__form {
+        padding: 60px 40px;
+        border-radius: 6px;
+        box-shadow: 0 5px 20px 0 rgba(146, 146, 146, 0.3);
+        width: 100%;
+
+        &-title {
+            font-size: 22px;
+            @extend %opensans-700;
+            margin-bottom: 25px;
+        }
+
+        &-box {
+            display: flex;
+            justify-content: space-between;
+
+            input {
+                width: 330px;
+            }
+        }
+
+        &-input {
+            width: 100%;
+            display: block;
+            height: 60px;
+            background-color: $bg;
+            border: none;
+            padding: 0 24px;
+            outline: transparent;
+            margin-bottom: 30px;
+        }
+
+        &-textarea {
+            width: 100%;
+            display: block;
+            resize: none;
+            height: 200px;
+            background-color: $bg;
+            border: none;
+            padding: 24px;
+            outline: transparent;
+            margin-bottom: 30px;
+        }
     }
 }
 

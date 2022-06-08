@@ -77,10 +77,16 @@ $('.product-tabs__top-item').on('click', function (e) {
 
     $('.product-tabs__content-item').removeClass('product-tabs__content-item--active');
     $($(this).attr('href')).addClass('product-tabs__content-item--active');
-
 });
 
-// $('.blog-page__slider').slick({
-//     prevArrow: '<button class="slick-btn slick-prev"><img src="images/icon/arrow-left.svg" alt="prev"></button>',
-//     nextArrow: '<button class="slick-btn slick-next"><img src="images/icon/arrow-right.svg" alt="prev"></button>',
-// });
+let map;
+
+function initMap() {
+    map = new google.maps.Map(document.getElementById('map'), {
+        center: {
+            lat: 54.192,
+            lng: 37.616
+        },
+        zoom: 14,
+    });
+};
