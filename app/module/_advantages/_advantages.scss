@@ -1,0 +1,47 @@
+.advantages {
+    background-color: #F6F6F6;
+    padding: 50px 0 30px;
+    margin-bottom: 70px;
+
+    &__inner {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__item {
+        position: relative;
+        max-width: 190px;
+    }
+
+    &__item--scooter::before {
+        position: absolute;
+        content: url(../images/icon/scooter.svg);
+        left: -74px;
+    }
+
+    &__item--box::before {
+        position: absolute;
+        content: url(../images/icon/box.svg);
+        left: -74px;
+    }
+
+    &__item--hours::before {
+        position: absolute;
+        content: url(../images/icon/hours.svg);
+        left: -74px;
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 140px;
+    }
+
+    &__title {
+        font-size: 16px;
+        @extend %opensans-600;
+        margin-bottom: 8px;
+    }
+
+    &__text {
+        color: $subtitle;
+    }
+}
