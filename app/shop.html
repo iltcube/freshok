@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -7,10 +10,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Фрешок</title>
     <link rel="stylesheet" href="css/shop.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
     <header class="header">
+    <div class="header__menu menu">
+        <div class="menu__images">
+            <a class="menu__logo" href="#">
+                <img class="menu__logo-img" src="images/menu-logo.svg" alt="menu">
+            </a>
+
+            <button class="menu__logo-btn">
+                <img class="menu__logo-img" src="images/icon/cross.svg" alt="menu">
+            </button>
+        </div>
+
+        <div class="menu__nav">
+            <a class="menu__nav-link" href="#">Вход</a>
+            <a class="menu__nav-link" href="#">Регистрация</a>
+        </div>
+
+        <a class="menu__catalog" href="#">Каталог товаров</a>
+
+        <div class="menu__contacts">
+            <a class="menu__contacts-links" href="tel:+7907288365">+7 907 288 365</a>
+            <a class="menu__contacts-links" href="#">Санкт-Петербург, ул. Ленина, 1</a>
+            <ul class="menu__contacts-list">
+                <li class="menu__contacts-item">
+                    <a class="menu__contacts-link" href="#">
+                        <img class="menu__contacts-img" src="images/icon/facebook-menu.svg" alt="facebook">
+                    </a>
+                </li>
+                <li class="menu__contacts-item">
+                    <a class="menu__contacts-link" href="#">
+                        <img class="menu__contacts-img" src="images/icon/youtube-menu.svg" alt="youtube">
+                    </a>
+                </li>
+                <li class="menu__contacts-item">
+                    <a class="menu__contacts-link" href="#">
+                        <img class="menu__contacts-img" src="images/icon/telegram-menu.svg" alt="telegram">
+                    </a>
+                </li>
+                <li class="menu__contacts-item">
+                    <a class="menu__contacts-link" href="#">
+                        <img class="menu__contacts-img" src="images/icon/instagram-menu.svg" alt="instagram">
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <ul class="menu__list">
+            <li class="menu__list-item">
+                <a class="menu__list-link" href="#">Доставка</a>
+            </li>
+            <li class="menu__list-item">
+                <a class="menu__list-link" href="#">О нас</a>
+            </li>
+            <li class="menu__list-item">
+                <a class="menu__list-link" href="#">Новости</a>
+            </li>
+            <li class="menu__list-item">
+                <a class="menu__list-link" href="#">Контакты</a>
+            </li>
+            <li class="menu__list-item">
+                <a class="menu__list-link" href="#">Акции</a>
+            </li>
+            <li class="menu__list-item">
+                <a class="menu__list-link" href="#">Вакансии</a>
+            </li>
+            <li class="menu__list-item">
+                <a class="menu__list-link" href="#">Отзывы</a>
+            </li>
+            <li class="menu__list-item">
+                <a class="menu__list-link" href="#">Публичная оферта</a>
+            </li>
+        </ul>
+    </div>
+
     <div class="header__top">
         <div class="container">
             <nav class="header__nav">
@@ -40,6 +117,10 @@
                         </a>
                     </li>
                 </ul>
+
+                <button class="header__btn">
+                    <span></span>
+                </button>
             </nav>
         </div>
     </div>
@@ -49,6 +130,7 @@
             <div class="header__inner">
                 <a href="#" class="logo">
                     <img class="logo-img" src="images/logo.svg" alt="logo">
+                    <img class="logo-icon" src="images/icon/symbol.svg" alt="logo">
                 </a>
 
                 <ul class="header__catalog">
@@ -75,6 +157,9 @@
                         class="header__search-btn" type="submit" value="Поиск">
                 </form>
                 <div class="user-nav">
+                    <button class="user-nav__btn">
+                        <img class="user-nav__btn-img" src="images/icon/icon-search__white.svg" alt="icon search">
+                    </button>
                     <a class="user-nav__link" href="login.html">
                         <img class="user-nav__link-img" src="images/icon/user-link.svg" alt="user">
                     </a>
@@ -96,7 +181,7 @@
 
         <section class="top">
     <div class="container">
-        <h2 class="title">Авторизация</h2>
+        <h2 class="title">Каталог продуктов</h2>
         <div class="breadcrumbs">
             <ul class="breadcrumbs__list">
                 <li class="breadcrumbs__item">
@@ -104,7 +189,7 @@
                 </li>
 
                 <li class="breadcrumbs__item">
-                    <span href="#" class="breadcrumbs__link">Вход</span>
+                    <span href="#" class="breadcrumbs__link">Все товары</span>
                 </li>
             </ul>
         </div>
@@ -114,6 +199,7 @@
         <section class="shop">
             <div class="container">
                 <div class="shop__inner">
+                    <button class="shop-filter__btn"></button>
                     <div class="shop__filters filter">
 
                         <div class="filter-search filter__item">

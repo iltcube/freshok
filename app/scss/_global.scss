@@ -57,6 +57,7 @@ button {
 .breadcrumbs {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 
     &__list {
         font-size: 22px;
@@ -147,6 +148,48 @@ button {
 
         &::before {
             right: -5px;
+        }
+    }
+}
+
+.lock {
+    overflow: hidden;
+}
+
+@media (max-width:992px) {
+    .pagination {
+        &__arrows {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .title {
+        font-size: 24px;
+    }
+
+    .breadcrumbs {
+        &__list {
+            font-size: 18px;
+        }
+
+        &__item:first-child {
+            margin-right: 20px;
+        }
+
+        &__item:first-child::before {
+            left: -20px;
+            top: 1px;
+        }
+
+        &__item::before {
+            left: -20px;
+            top: 3px;
+        }
+
+        &__link {
+            padding: 0;
         }
     }
 }

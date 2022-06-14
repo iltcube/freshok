@@ -77,3 +77,42 @@
         @extend %opensans-600;
     }
 }
+
+@media (max-width:1270px) {
+    .blog {
+        &__items {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        &__item {
+            margin: 20px;
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .partners {
+        margin-bottom: 50px;
+
+        &__item:nth-child(n+3) {
+            display: none;
+        }
+    }
+
+    .blog {
+        padding: 50px 0;
+
+        &__item {
+            margin: 0 0 15px 0;
+        }
+
+        &__img {
+            margin-bottom: 15px;
+        }
+
+        &__text {
+            padding: 0 15px 15px 15px;
+        }
+    }
+}

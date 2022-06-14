@@ -58,3 +58,21 @@
         padding-bottom: 5px;
     }
 }
+
+@media (max-width:1320px) {
+    .banners {
+        &__item:nth-child(1) {
+            grid-column: span 1;
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .banners {
+        margin-bottom: 50px;
+
+        &__inner {
+            grid-gap: 15px 0;
+        }
+    }
+}
